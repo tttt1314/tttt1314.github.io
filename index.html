@@ -12,13 +12,74 @@
 		<h1>歌聲真假音評測</h1>
 	</div>
 	</header>
-	<p>請<b>帶上耳機</b>聆聽下列十句歌曲，評估歌曲的真假音程度，音質。<b>從最假到最真依序為0到五分，並將<a href="https://forms.gle/Z9BQ6D7yxZcjk6YVA" target="_blank">分數填至此表單</a>。</b></p>
+	<p>請<b>帶上耳機</b>聆聽下列十句歌曲，評估歌曲的真假音程度，音質。<b>從最假到最真依序為0到五分，並<a href="https://forms.gle/Z9BQ6D7yxZcjk6YVA" target="_blank">填寫此表單</a>。</b></p>
 	<p>[註]: 同個實驗中，分數可重複 (例: 音檔1、2均可打4分)。</p>
 	<hr>
+<form id="myForm">
+	<h1>
+		<font color="DarkBlue">測驗音檔</font>
+	</h1>
+	<div style="float: left; margin-right:20px">
+		<table border=1 id="cssTable">
 
+			<!-- row 1 -->
+			<tr>
+				<td align="center"><b>真音範例</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tr>
+
+			<!-- row 2 -->
+			<tr>
+				<td align="center"><b>假音範例</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tr>
+
+
+	<div style="float: left; margin-right:20px">
+
+		<table border=1 id="cssTable">
+
+			<!-- row 1 -->
+			<tr>
+				<td align="center"><b>音檔6</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/s17_chest_seg4-vcto-falset.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tr>
+
+			<!-- row 2 -->
+			<tr>
+				<td align="center"><b>音檔7</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/s17_chest_seg4-vcto-falset-f0-2.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tr>
+
+
+
+
+
+
+</form>
 
   <form id="myForm">
-  	<h1>	<font color="DarkBlue">測試音檔</font></h1>
+  	<h1>	<font color="DarkBlue">測驗音檔</font></h1>
 	<div style="float: left; margin-right:20px">
 		<table border=1 id="cssTable">
 
