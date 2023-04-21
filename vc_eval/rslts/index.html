@@ -1,0 +1,558 @@
+<head>
+	<link rel="stylesheet" type = "text/css" href="style.css">
+</head>
+
+<body>
+	<header>
+	<div class="header">
+		<h1>歌聲真假音評測</h1>
+	</div>
+	</header>
+	<p>以下會有十個音檔，請聽完評測真假音程度與音質</p>
+	<p>真假音程度: 1假 2偏假 3介於中間 4偏真 5真</p>
+	<p>音質: 1極差 2差 3一般 4良好 5極優</p>
+	<p>請<b>帶上耳機</b>聆聽下列十句歌曲，評估歌曲的真假音程度與音質。並<a href="https://forms.gle/Z9BQ6D7yxZcjk6YVA" target="_blank">填寫此表單</a>。</b></p>
+	<hr>
+12 個評分題
+4個tar音色*3個src音色(各挑兩位歌手一男一女，非tar歌手) 音質 轉換
+4 個比較題(每題放三個不同bottle neck的音檔)
+4個音色 轉換效果 咬字清晰度
+  <form id="myForm">
+	<div style="float: left; margin-right:20px">
+        <h2>範例音檔 Reference Samples </h2>
+		<table border=1 id="cssTable">
+		    <!-- col 0 -->
+            <tr>
+			<tc>
+				<td align="center"><b>歌手1<br>真音範例</br></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+			<tc>
+				<td align="center"><b>歌手2<br>真音範例</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            <tc>
+				<td align="center"><b>歌手3<br>真音範例</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+                        <tc>
+				<td align="center"><b>歌手4<br>真音範例</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            </tr>				
+			<!-- col 1 -->
+            <tr>
+			<tc>
+				<td align="center"><b>歌手1<br>假音範例</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            <tc>
+				<td align="center"><b>歌手2<br>假音範例</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            <tc>
+				<td align="center"><b>歌手3<br>假音範例</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>			
+            <tc>
+				<td align="center"><b>歌手4<br>假音範例</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            </tr>
+            <tr>
+                <tc>
+                <td align="center"><b>撕裂音範例</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+                </tc>
+                <tc>
+                <td align="center"><b>海豚音範例</b></td>
+				<td>
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+                </tc>
+            </tr>
+		</table>
+		<h2>第一大題</h2>
+		<table border=1 id="cssTable">
+		<!-- row -1 -->
+		<p>第一題</p>
+        <tr>
+			<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+						<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+					SRC: 歌手2 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            
+			<!-- row 0 -->
+			<tc>
+				<td align="center"><b>Sample 2</b></td>
+				<td>
+                    目標: 撕裂音
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+        </tr>
+		</table>
+				<table border=1 id="cssTable">
+		<!-- row -1 -->
+		假音 , 三種bottlenecks
+        <tr>
+			<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+						<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+					SRC: 歌手2 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            
+			<!-- row 0 -->
+			<tc>
+				<td align="center"><b>Sample 2</b></td>
+				<td>
+                    目標: 撕裂音
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+        </tr>
+		</table>
+				<table border=1 id="cssTable">
+		<!-- row -1 -->
+		撕裂音 , 三種bottlenecks
+        <tr>
+			<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+						<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+					SRC: 歌手2 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            
+			<!-- row 0 -->
+			<tc>
+				<td align="center"><b>Sample 2</b></td>
+				<td>
+                    目標: 撕裂音
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+        </tr>
+		</table>
+				<table border=1 id="cssTable">
+		<!-- row -1 -->
+		海豚音 , 三種bottlenecks
+        <tr>
+			<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+						<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+					SRC: 歌手2 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            
+			<!-- row 0 -->
+			<tc>
+				<td align="center"><b>Sample 2</b></td>
+				<td>
+                    目標: 撕裂音
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+        </tr>
+		</table>
+        <h2>第二大題</h2>
+		<table border=1 id="cssTable">
+		<!-- row -1 -->
+		4個cpsynth音檔
+        <tr>
+			<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+						<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+					SRC: 歌手2 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            
+			<!-- row 0 -->
+			<tc>
+				<td align="center"><b>Sample 2</b></td>
+				<td>
+                    目標: 撕裂音
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+			<tc>
+				<td align="center"><b>Sample 2</b></td>
+				<td>
+                    目標: 撕裂音
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+        </tr>
+		</table>
+		
+		<table border=1 id="cssTable">
+		<!-- row -1 -->
+		真音 to 3種音色
+        <tr>
+			<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+                    目標: 假音
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+						<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+                    目標: 假音
+					SRC: 歌手3 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            
+			<!-- row 0 -->
+			<tc>
+				<td align="center"><b>Sample 2</b></td>
+				<td>
+                    目標: 撕裂音
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+
+        </tr>
+        <tr>
+			<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+                    目標: 撕裂音
+					SRC: 歌手3 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+			<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+                    目標: 海豚音
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            
+			<!-- row 0 -->
+			<tc>
+				<td align="center"><b>Sample 2</b></td>
+				<td>
+                    目標: 海豚音
+					SRC: 歌手3 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc> 
+        </tr>
+		</table>
+
+				<table border=1 id="cssTable">
+		<!-- row -1 -->
+		假音 to 3種音色
+        <tr>
+			<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+                    目標: 真音
+					SRC: 歌手1 假音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+						<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+                    目標: 真音
+					SRC: 歌手3 假音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            
+			<!-- row 0 -->
+			<tc>
+				<td align="center"><b>Sample 2</b></td>
+				<td>
+                    目標: 撕裂音
+					SRC: 歌手1 假音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+
+        </tr>
+        <tr>
+			<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>	
+                    目標: 撕裂音
+					SRC: 歌手3 
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+			<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+                    目標: 海豚音
+					SRC: 歌手1 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            
+			<!-- row 0 -->
+			<tc>
+				<td align="center"><b>Sample 2</b></td>
+				<td>
+                    目標: 海豚音
+					SRC: 歌手3 真音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc> 
+        </tr>
+		</table>
+						<table border=1 id="cssTable">
+		<!-- row -1 -->
+		撕裂音 to 3種音色
+        <tr>
+			<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+                    目標: 真音
+					SRC: 歌手1 假音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+						<tc>
+				<td align="center"><b>Sample 1</b></td>
+                
+				<td>
+                    目標: 假音
+					SRC: 歌手3 假音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+            
+			<!-- row 0 -->
+			<tc>
+				<td align="center"><b>Sample 2</b></td>
+				<td>
+                    目標: 海豚音
+					SRC: 歌手1 假音
+					<br />
+					<audio controls id="player" style="height:35px; width:240px;">>
+						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
+					</audio>
+				</td>
+			</tc>
+
+        </tr>
+
+		</table>
+</body>
+
+</html>
+
+
