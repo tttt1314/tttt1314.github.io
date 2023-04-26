@@ -14,8 +14,8 @@ h1 {
 
 /* 題目字型設定 */
 p {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 16px;
+    /* font-weight: bold; */
     color: #161616;
     margin-bottom: 20px;
 }

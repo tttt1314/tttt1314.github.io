@@ -11,10 +11,13 @@
 	</div>
 	</header>
 
-	<p>本表單為歌聲轉換模型的評測，共34題。非常感謝您撥冗填寫這份表單!</p>
-	<p>請<b>帶上耳機</b>聆聽下列歌曲，評估歌曲的真假音程度與音質。並<a href="https://forms.gle/Z9BQ6D7yxZcjk6YVA" target="_blank">填寫此表單</a>。</b></p>
-	<p>轉換效果: 1: 幾乎沒轉換到 2:有轉換一點 3:有轉換，約一半一半 4: 與目標音色相似 5: 已經達到目標音色了</p>
-	<p>音質: 1: 極差 2: 差 3: 一般 4: 良好 5: 極優</p>
+	<p>本份表單為利用神經網路模型進行歌聲轉換的效果評測</p>
+	<p>注意：此表單提到的“音色” 為“排除歌手個人音色後的其餘音色特質”，例如真音、假音、氣聲等等。</p>
+	<p>三部分，共34題</p>
+    <p>第一大題為比較題，請聽完原音檔與目標音色後，比較三個sample 音檔的<b>咬字清晰度</b>與<b>轉換成效</b>，並進行排序。</p>
+	<p>第二大題為評分題，請聽完原音檔和目標音色音檔，並將原音檔音色當成1分，目標音色當成5分，為轉換後的音檔做<b>轉換成效</b>評分。</p>
+	<p>第三大題為評分題，請為各題做<b>音質</b>評分，評分基準如下</p>
+	<p>1: 極差 2: 差 3: 一般 4: 良好 5: 極優</p>
 	
 
 
@@ -23,8 +26,8 @@
 
 		<h2>第一大題 轉換效果和音質比較</h2>
 		<p>請比較各sample並進行排序，比較項目有二</p>
-		<p>1. 與目標音色的相似度</p>
-		<p>2. 音質</p>
+		<p>1. 轉換成效：與目標音色的相似度</p>
+		<p>2. 咬字清晰度</p>
 		<!-- row -1 -->
 		<h3>第1題</h3>
 		<table border=1 id="cssTable" >
@@ -509,7 +512,7 @@
 		</table>
         <h2>第二大題: 轉換效果評分</h2>
 		
-		請聽完原音檔和目標音色音檔，並將原音檔音色當成1分，目標音色當成5分，去做轉換效果評分
+		請聽完<b>原音檔</b>和<b>目標音色</b>音檔，並將原音檔音色當成1分，目標音色當成5分，去做<b>轉換後的音檔</b>的轉換效果評分
 
 		<table border=1 id="cssTable">
 		<!-- row -1 -->
@@ -617,7 +620,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
@@ -655,7 +658,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
@@ -693,7 +696,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
@@ -731,7 +734,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
@@ -769,7 +772,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
@@ -807,7 +810,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
@@ -845,7 +848,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
@@ -883,7 +886,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
@@ -909,7 +912,7 @@
 				</td>
 			</tc>
 			<tc>
-				<td align="center"><b>目標音色</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
                 
 				<td>
 					<br />
@@ -997,7 +1000,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
@@ -1073,7 +1076,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
@@ -1111,7 +1114,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
@@ -1149,7 +1152,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
@@ -1187,7 +1190,7 @@
             
 			<!-- row 0 -->
 			<tc>
-				<td align="center"><b>轉換音檔</b></td>
+				<td align="center"><b>轉換後的音檔</b></td>
 				<td>
 					<br />
 					<audio controls id="player" style="height:35px; width:240px;">>
