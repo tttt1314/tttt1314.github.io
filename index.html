@@ -1,167 +1,122 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>VC evaluation</title>
-
+<title>Captions and Audio Files</title>
 </head>
-
 <body>
-	<header>
-	<div class="header">
-		<h1>歌聲真假音評測.</h1>
-	</div>
-	</header>
-	<p>以下會有十個音檔，請聽完評測真假音程度與音質</p>
-	<p>真假音程度: 1假 2偏假 3介於中間 4偏真 5真</p>
-	<p>音質: 1極差 2差 3一般 4良好 5極優</p>
-	<p>請<b>帶上耳機</b>聆聽下列十句歌曲，評估歌曲的真假音程度與音質。並<a href="https://forms.gle/Z9BQ6D7yxZcjk6YVA" target="_blank">填寫此表單</a>。</b></p>
-	<hr>
-
-
-  <form id="myForm">
-	<div style="float: left; margin-right:20px">
-		<table border=1 id="cssTable">
-		<!-- row -1 -->
-			<tr>
-				<td align="center"><b>真音範例</b></td>
-				<td>
-					<br />
-					<audio controls id="player" style="height:35px; width:240px;">>
-						<source src="293000/cpsynF0cv-s36_chest_03.wav" type="audio/wav">
-					</audio>
-				</td>
-			</tr>
-			
-			<!-- row 0 -->
-			<tr>
-				<td align="center"><b>假音範例</b></td>
-				<td>
-					<br />
-					<audio controls id="player" style="height:35px; width:240px;">>
-						<source src="293000/cpsynF0cv-s29_falset_seg8.wav" type="audio/wav">
-					</audio>
-				</td>
-			</tr>
-		<!-- row 1 -->
-		<tr>
-		<td align="center"><b>音檔1</b></td>
-		<td>
-			<br/>
-			<audio controls id="player" style="height:35px; width:240px;">>
-			  <source src="293000/cpsynF0cv-s22_falset_seg4.wav" type="audio/wav">
-			</audio>
-		</td>
-		</tr>
-
-		<!-- row 2 -->
-		<tr>
-		<td align="center"><b>音檔2</b></td>
-		<td>
-			<br/>
-			<audio controls id="player" style="height:35px; width:240px;">>
-			  <source src="293000/s22_falset_seg4-vcto-chest.wav" type="audio/wav">
-			</audio>
-		</td>
-		</tr>
-
-		<!-- row 3 -->
-		<tr>
-		<td align="center"><b>音檔3</b></td>
-		<td>
-			<br/>
-			<audio controls id="player" style="height:35px; width:240px;">>
-			  <source src="293000/cpsynF0cv-s11_chest_seg13.wav" type="audio/wav">
-			</audio>
-		</td>
-		</tr>
-
-		<!-- row 4 -->
-		<tr>
-		<td align="center"><b>音檔4</b></td>
-		<td>
-			<br/>
-			<audio controls id="player" style="height:35px; width:240px;">>
-			  <source src="293000/s11_chest_seg13-vcto-falset.wav" type="audio/wav">
-			</audio>
-		</td>
-		</tr>
-
-		<!-- row 5 -->
-		<tr>
-		<td align="center"><b>音檔5</b></td>
-		<td>
-			<br/>
-			<audio controls id="player" style="height:35px; width:240px;">>
-			  <source src="293000/s16_falset_seg4-vcto-chest.wav" type="audio/wav">
-			</audio>
-		</td>
-		</tr>
-		</table>
-		</div>
-
-		<div style="float: left; margin-right:20px">
-
-		<table border=1 id="cssTable">
-
-		<!-- row 1 -->
-		<tr>
-		<td align="center"><b>音檔6</b></td>
-		<td>
-			<br/>
-			<audio controls id="player" style="height:35px; width:240px;">>
-			  <source src="293000/s17_chest_seg4-vcto-falset.wav" type="audio/wav">
-			</audio>
-		</td>
-		</tr>
-
-		<!-- row 2 -->
-		<tr>
-		<td align="center"><b>音檔7</b></td>
-		<td>
-			<br/>
-			<audio controls id="player" style="height:35px; width:240px;">>
-			  <source src="293000/s17_chest_seg4-vcto-falset-f0-2.wav" type="audio/wav">
-			</audio>
-		</td>
-		</tr>
-
-		<!-- row 3 -->
-		<tr>
-		<td align="center"><b>音檔8</b></td>
-		<td>
-			<br/>
-			<audio controls id="player" style="height:35px; width:240px;">>
-			  <source src="293000/s22_falset_seg4-vcto-chest-f0-2.wav" type="audio/wav">
-			</audio>
-		</td>
-		</tr>
-
-		<!-- row 4 -->
-		<tr>
-		<td align="center"><b>音檔9</b></td>
-		<td>
-			<br/>
-			<audio controls id="player" style="height:35px; width:240px;">>
-			  <source src="293000/s11_chest_seg13-vcto-falset-f0-2.wav" type="audio/wav">
-			</audio>
-		</td>
-		</tr>
-
-		<!-- row 5 -->
-		<tr>
-		<td align="center"><b>音檔10</b></td>
-		<td>
-			<br/>
-			<audio controls id="player" style="height:35px; width:240px;">>
-			  <source src="293000/s16_falset_seg4-vcto-chest-f0-2.wav" type="audio/wav">
-			</audio>
-		</td>
-		</tr>
-
-		</table>
-  </form>
+<h1>Captions and Audio Files</h1>
+<h2>KL Divergence Analysis</h2>
+<h3>Best 10 Captions</h3>
+<ul>
+<li>This tribal music is played on a didgeridoo. It is played by vibrating the lips over the instrument using breathing techniques. The song has a continuous droning sound and inter spread with low pitch bass sounds. There are no voices in this song. This audio can be used in a movie where the protagonist is trapped in a forest.</li>
+<audio controls><source src="./eval_results/audio_samples/best_kl/reference/oD0Xp--xxjE.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/best_kl/generate/D0Xp--xxjE.wav.wav" type="audio/wav"></audio>
+<li>Fast techno with a hardstyle edge. Four on the floor kick with the synth bass and hi-hat on the off beats combined with a rhythmic synth gives the music an intense vibe.</li>
+<audio controls><source src="./eval_results/audio_samples/best_kl/reference/t6jlx6jAb-Q.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/best_kl/generate/6jlx6jAb-Q.wav.wav" type="audio/wav"></audio>
+<li>This music is a Didgeridoo solo instrumental. The tempo is slow with a steady, vibrating drone like harmony with no accompaniment. The music is an intense, monotone , low pitched,incessant buzz like vibrations. It is unique with a captivating, alluring and hypnotic vibe.</li>
+<audio controls><source src="./eval_results/audio_samples/best_kl/reference/1yWGmdevTuM.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/best_kl/generate/yWGmdevTuM.wav.wav" type="audio/wav"></audio>
+<li>The techno music excerpt features only a beat, no other melodic or harmonic instruments. By the sound of it, the beat was made using sampled drums. Other percussive instruments can be heard in the background. This music would be played in a club.</li>
+<audio controls><source src="./eval_results/audio_samples/best_kl/reference/kko1uYyqJ_o.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/best_kl/generate/ko1uYyqJ_o.wav.wav" type="audio/wav"></audio>
+<li>This music is instrumental. The tempo is fast with a droning melody of didgeridoo. The music is complex, powerful, emphatic and the droning tone makes it trippy, psychedelic, meditative and hypnotic.</li>
+<audio controls><source src="./eval_results/audio_samples/best_kl/reference/laVgKAcv8XA.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/best_kl/generate/aVgKAcv8XA.wav.wav" type="audio/wav"></audio>
+<li>The instrumental music features a piano playing a romantic song. A group of strings accompany the pianist with warm harmonies. The overall atmosphere is romantic and touching.</li>
+<audio controls><source src="./eval_results/audio_samples/best_kl/reference/UkZ76EFfLSg.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/best_kl/generate/kZ76EFfLSg.wav.wav" type="audio/wav"></audio>
+<li>This is an amateur recording of a solo banjo player. The piece is played in the major scale, creating a friendly, calming atmosphere giving it a definitive characteristic of a folk song. It could be used as background music in pastoral content, touristic videos of rural locations.</li>
+<audio controls><source src="./eval_results/audio_samples/best_kl/reference/COe_UKKVpVo.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/best_kl/generate/Oe_UKKVpVo.wav.wav" type="audio/wav"></audio>
+<li>The low quality recording features a synth wave disco instrumental that consists of punchy "4 on the floor" kick patter, reverberant snare hits, shimmering hi hats, widely spread high pitched synth lead, groovy synth bass and repetitive percussive element. It is noisy, but also energetic and groovy- like something you would hear in a disco club.</li>
+<audio controls><source src="./eval_results/audio_samples/best_kl/reference/QzMsoz4XIkM.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/best_kl/generate/zMsoz4XIkM.wav.wav" type="audio/wav"></audio>
+<li>This music is a percussion solo. The tempo is fast with the drummer  playing an energetic solo. The beat is vigorous, enthusiastic, spirited, infectious and punchy with a flourish of cymbals.</li>
+<audio controls><source src="./eval_results/audio_samples/best_kl/reference/eQTK2fo3RoE.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/best_kl/generate/QTK2fo3RoE.wav.wav" type="audio/wav"></audio>
+<li>Someone is playing a melody on an acoustic guitar and someone another melody on a oud. The two melodies complement each other. This song may be playing in a live presentation.</li>
+<audio controls><source src="./eval_results/audio_samples/best_kl/reference/cdIvqn14xgI.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/best_kl/generate/dIvqn14xgI.wav.wav" type="audio/wav"></audio>
+</ul>
+<h3>Worst 10 Captions</h3>
+<ul>
+<li>The low quality recording features mono sounds of beeping sound effects, scissors sound effects and some wooden foley effects. It is obviously a video game sound effect, but the sound quality is low since it does not have much depth to it.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/reference/D_QEW1Lnl2Q.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/generate/_QEW1Lnl2Q.wav.wav" type="audio/wav"></audio>
+<li>The low quality recording features a live performance of a spooky glass melody. The recording is very noisy, as there are crowd chattering noises in the background.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/reference/X96v9LlsjJM.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/generate/96v9LlsjJM.wav.wav" type="audio/wav"></audio>
+<li>This clip features the sound of an alarm clock. A female voice is also featured. The voice is irritated at the sound of the alarm. The device is being hit in an attempt to silence it. Only at the beginning of the clip, there is the sound of music fading away. There are no other instruments featured in this clip. The quality of audio is low.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/reference/PlQibWaPAcM.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/generate/lQibWaPAcM.wav.wav" type="audio/wav"></audio>
+<li>Someone is playing a slightly distorted e-guitar. A funky riff is being played and repeated. The audio-quality is not the best. This is an amateur recording.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/reference/kSKXtXXAD70.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/generate/SKXtXXAD70.wav.wav" type="audio/wav"></audio>
+<li>This music is instrumental. The tempo is fast with the musician  playing a high , vigorous, high pitched  melody on a Glass harp or angelic organ. The music is sharp, unique, enchanting, and celestial with no accompaniment.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/reference/GopccU3Am1w.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/generate/opccU3Am1w.wav.wav" type="audio/wav"></audio>
+<li>This song features the sound of two church bells playing together. One bell plays at twice the tempo of the other bell producing a set rhythm. There are no other instruments in this song. There are no voices in this song.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/reference/OZjpYGdvMX0.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/generate/ZjpYGdvMX0.wav.wav" type="audio/wav"></audio>
+<li>This is a low quality audio recording. It starts with a DJ console scratching a record. This is accompanied by programmed percussion playing a repetitive melody. A berimbau plays after the scratching sound and the percussion continues to play the same beat. The berimbau plays the string as well as adds to the beat in the song. This is an instrumental song and there are no voices. This song can be played in a fashion show.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/reference/zGONTDY_rNM.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/generate/GONTDY_rNM.wav.wav" type="audio/wav"></audio>
+<li>The low quality recording features a wide crowd sound effects that include loud clapping, whistling and cheering, while the orchestra is playing in the background. It sounds reverberant and like it was recorded with a better quality phone.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/reference/IUD_ZYOh2MM.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/generate/UD_ZYOh2MM.wav.wav" type="audio/wav"></audio>
+<li>The low quality recording features a printer that produces printing sounds and some muffled music playing in the background, probably on a radio. It is noisy and in mono.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/reference/W5t-T1vP2DU.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/generate/5t-T1vP2DU.wav.wav" type="audio/wav"></audio>
+<li>The low quality recording features a mantra song that consists of soft female vocal singing over wide, mellow synth pad chords. It sounds passionate, calming and relaxing - like something you would play while doing yoga.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/reference/TIASpLtI8ks.wav" type="audio/wav"></audio>
+<audio controls><source src="./eval_results/audio_samples/worst_kl/generate/IASpLtI8ks.wav.wav" type="audio/wav"></audio>
+</ul>
+<h2>CLAP Analysis</h2>
+<h3>Best 10 Captions</h3>
+<ul>
+<li>The song is an instrumental. The song is slow tempo with gentle drum brushes, percussion, bass guitar solo, and piano accompaniment gently. The song is groovy and emotional. The song is possibly a Christian worship song or a smooth jazz song. The audio quality is average.</li>
+<audio controls><source src="./eval_results/audio_samples/best_clap/h53p0Tnnxg.wav.wav" type="audio/wav"></audio>
+<li>This is a TV series theme. It is an instrumental piece. There is a melody being played on an acoustic guitar. There are various percussive elements in this piece. The piece is mostly rhythmic and there is an eccentric feel to it. This piece could be used as an accompaniment piece in a latin dance course.</li>
+<audio controls><source src="./eval_results/audio_samples/best_clap/18aK9HhNSM.wav.wav" type="audio/wav"></audio>
+<li>This is a didgeridoo jam piece. The didgeridoo is playing tunes at a pitch varying from low to medium. There is a tribal sound to this recording. It could be used in the soundtrack of a movie/TV series with a jungle/primitive setting. It could also be sampled to be used in beat-making.</li>
+<audio controls><source src="./eval_results/audio_samples/best_clap/5b9UHjagaI.wav.wav" type="audio/wav"></audio>
+<li>The clip is of traditional eastern sounds that would be found in India. We hear notes being played on a sitar, as well as an acoustic guitar. There's also a sustained buzzing instrument in the background which creates a relaxed atmosphere.</li>
+<audio controls><source src="./eval_results/audio_samples/best_clap/EOQco76eXQ.wav.wav" type="audio/wav"></audio>
+<li>The low quality recording features a live performance of a country song played by ukulele orchestra, smooth double bass and sung by fruity male vocals. It is uptempo and it sounds energetic, even without drums, and passionate.</li>
+<audio controls><source src="./eval_results/audio_samples/best_clap/ky0DF507fw.wav.wav" type="audio/wav"></audio>
+<li>This is an Arabian folk music piece. It is meant to be an accompaniment to a folk dance. There is an oud playing the melody while a tambourine is playing as the rhythmic background. This is an amateur recording of a live performance. The atmosphere is playful. This could be playing in the background at a Middle Eastern cuisine restaurant or at a hookah place.</li>
+<audio controls><source src="./eval_results/audio_samples/best_clap/3lH_Tevw5o.wav.wav" type="audio/wav"></audio>
+<li>This music is instrumental. The tempo is slow with the musician plucking a single string of a ukelele. This audio is of a Ukelele being tuned.</li>
+<audio controls><source src="./eval_results/audio_samples/best_clap/kzyG2F8mTM.wav.wav" type="audio/wav"></audio>
+<li>A banjo is playing a solo along to an upright-bass laying a simple monotone bassline. This song may be playing in a bar with live music. This is an amateur recording.</li>
+<audio controls><source src="./eval_results/audio_samples/best_clap/qTPbZf44E0.wav.wav" type="audio/wav"></audio>
+<li>A male ukulele player plays this emotional solo. The song is medium tempo with no other instrumentation than an ukulele playing. The song is emotional and poignant. The song is an instrumental tune.</li>
+<audio controls><source src="./eval_results/audio_samples/best_clap/d6gQQ_0evk.wav.wav" type="audio/wav"></audio>
+<li>The song is an instrumental. The tempo is medium with a marching band rhythm, snares playing percussively , cymbals crashing, brass band harmony, trumpets blaring, trombones and tubas playing long notes. The song has a patriotic fervour and inspires. The overall sound quality is poor.</li>
+<audio controls><source src="./eval_results/audio_samples/best_clap/KawN2sxhYc.wav.wav" type="audio/wav"></audio>
+</ul>
+<h3>Worst 10 Captions</h3>
+<ul>
+<li>Encouraging gospel music featuring a women's choir, hand clapping, female background shouting, and a lead female vocalist. The choir is accompanied by a band vamping on one chord with an organist, heavy drumkit, and a syncopated bassline. Would fit in a southern spiritual service.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_clap/ep_3Y81E_w.wav.wav" type="audio/wav"></audio>
+<li>This song contains synthesizer pads and plucks playing all over the place along with ringing sounds, timpani and snare hits. This song may be playing for a bossfight in a video-game.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_clap/Yq21a42Mvg.wav.wav" type="audio/wav"></audio>
+<li>The drums are playing a steady rock groove with a half open hi hat constantly ringing through the song. The e-guitar is panned to the left and right side of the speakers or two e-guitars are shredding the same distorted chords along with the bass silently playing in the background. The female voice is singing in a higher pitch and is accompanied by a female backing voice singing a deeper harmony. This sounds like a typical high school rock song. This song may be played chilling in your room sitting on the bed daydreaming.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_clap/Gv_L09pf6E.wav.wav" type="audio/wav"></audio>
+<li>This is an amateur recording of a boy singing along to a kids song playing on a TV. It is an educational song with a female voice in the lead. The melody is being played by an acoustic guitar while the rhythm is played by the electronic drums. The quality of the recording is quite poor. Samples lifted from this recording could still be useful in beat-making.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_clap/4MdEIQcZxs.wav.wav" type="audio/wav"></audio>
+<li>The clip is a combination of various sound effects. There's a general atmospheric buzz of crowd chatter, and there are various beeping and buzzing sounds in the clip. The clip ends with a loud, slamming thud.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_clap/HDn79ee98Q.wav.wav" type="audio/wav"></audio>
+<li>This clip features a female voice singing the main melody. The backing instruments cannot be clearly heard due to the low quality of recording. The voice sings with a gospel feel. The bass plays ascending notes. The vocal melody is repetitive. Hand claps are played at random points.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_clap/fVfG0DrLjI.wav.wav" type="audio/wav"></audio>
+<li>The low quality recording features a crowd harmonized singing over loud wooden percussion. The recording is noisy, in mono and it sounds energetic, joyful and exciting.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_clap/OZWVSiRwv4.wav.wav" type="audio/wav"></audio>
+<li>The low quality recording features a live performance of a folk song and it consists of passionate female vocal singing over percussive tambourine. The recording is noisy, reverberant and the stereo image is unbalanced - leaning more towards the right channel. It sounds passionate though.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_clap/f3LGAL1LZc.wav.wav" type="audio/wav"></audio>
+<li>The song is a vintage recording of a church choir singing in vocal harmony. The song is medium tempo with a church organ accompanying the choir with no other instrumentation. The song is devotional and prayerful. The audio quality is highly deteriorated and is probably an amateur home video recording. The song is a classic church choir harmony.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_clap/J9TY-iqD9Q.wav.wav" type="audio/wav"></audio>
+<li>This instrument is a low quality audio recording. The instruments are not audible.</li>
+<audio controls><source src="./eval_results/audio_samples/worst_clap/scK8V4Veac.wav.wav" type="audio/wav"></audio>
+</ul>
 </body>
-
 </html>
-
